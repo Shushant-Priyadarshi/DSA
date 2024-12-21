@@ -26,6 +26,8 @@ of the next element.
 example: LinkedLists
 Everything else is depends upon the impl.
 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
 ▶️▶️ALGORITHMS
 Series of well defined steps to solve a particular problem (set of instructions)
 example :Face detection , Page ranking
@@ -33,6 +35,8 @@ example :Face detection , Page ranking
 👉Pseudocode is a language that allows us humans to specify and describe how a computer
 programs works in a way that is both interpreted by us, and translatable into code.
 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+▶️▶️Complexity
 
 
 
