@@ -1,1 +1,32 @@
-This is the starting of my DSA journey.
+🎯This is the starting of my DSA journey.
+
+👉Why DS?
+Data structure is simply a way to store and organize information appropriately ,
+so that it can be used efficiently.
+
+👉Advantages of DS:
+1) Easier processing of data.
+2) Efficient functioning of computer software since the data is stored in an efficient way.
+
+👉Categories of DS(based on how they can be accessed):
+1️⃣ Linear DS: These DS can be accessed sequentially by visiting each element in the
+array and commonly referred to as PASSOVER.
+example: Arrays,LL,Stack,Queue.
+2️⃣ Non-Linear DS: These DS stores the data in sorted way where there is a relationship
+between elements.We can't access the data sequentially but accessing the data requires
+ADVANCING and BACKTRACKING over the bits of data.
+example: Tress and Graph
+
+👉Categories of DS(based on how they can be stored):
+1️⃣ Linear DS: Elements are stored consecutively in the memory.
+example: Arrays
+2️⃣ Non-Linear DS: Elements are stored randomly and each bit of data has a pointer location
+of the next element.
+example: LinkedLists
+Everything else is depends upon the impl.
+
+
+
+
+
+
