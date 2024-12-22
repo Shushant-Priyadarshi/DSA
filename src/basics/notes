@@ -36,8 +36,30 @@ example :Face detection , Page ranking
 programs works in a way that is both interpreted by us, and translatable into code.
 
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-▶️▶️Complexity
+▶️▶️Complexity: defines how good an algorithm actually is.
+Complexity can be calculated by counting the number of basic operations as a function of the size
+of the input we then simplify the expression  and look at the most significant factor.
 
+👉Time Complexity: Quantifies the runtime of the algorithm.
+    ❌Time complexity != Time Taken (machine dependent)
+    ✅Time Complexity can be defined as the rate at which the time taken increases with
+       respect to the input size.
+       👉Big-oh Notation is used. => O(No.of steps taken by the program)
+       👉Three rules for calculating the no.of steps.
+            1️⃣ To be computed in worst case scenario.
+                👉Best case => Least number of operations.
+                👉Worst case => Maximum number of steps taken.
+            2️⃣ Avoid the constants.
+                👉Imagine the time complexity of our program is : O( 4n^3 + 3n^2 + 8)
+                👉 n = 10^5.
+                👉Then the complexity becomes = O ( 4x10^15 + 3x10^10 + 8).
+                👉Now this 4x10^15 + 3x10^10 is such a big operation that the 8 does not
+                  holds any significance.
+
+            3️⃣ Avoid lower values.
+
+
+👉Space Complexity:
 
 
 
