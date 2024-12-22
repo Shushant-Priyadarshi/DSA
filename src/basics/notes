@@ -59,7 +59,16 @@ of the input we then simplify the expression  and look at the most significant f
             3️⃣ Avoid lower values.
 
 
-👉Space Complexity:
+👉Space Complexity: Auxiliary space + Input Space
+    👉Auxiliary space: space that you take to solve the problem.
+    👉Input space: Space that you use the solve the problem.
+    example: c = a+b;
+    c = auxiliary space
+    a and b = input space
+    🎯Result = O(3)
+
+
+
 
 
 
