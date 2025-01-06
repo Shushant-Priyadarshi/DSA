@@ -1,7 +1,8 @@
 package basics.patterns;
 
-public class Star {
+public class Main {
     public static void main(String[] args) {
-        System.out.println("Star");
+       // Patterns.Square();
+        Patterns.Triangle(5);
     }
 }
