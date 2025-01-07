@@ -7,6 +7,9 @@ public class Main {
         //Patterns.TriangleNumber(4);
         //Patterns.SameNumTriangle(4);
         //Patterns.ReverseTriangle(4);
-        Patterns.ReverseTriangleNumber(5);
+        //Patterns.ReverseTriangleNumber(5);
+        //Patterns.ReverseSameNumTriangle(5);
+        //Patterns.pyramid(3);
+        Patterns.ReversePyramid(4);
     }
 }
