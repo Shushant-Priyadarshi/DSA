@@ -9,7 +9,11 @@ public class Main {
         //Patterns.ReverseTriangle(4);
         //Patterns.ReverseTriangleNumber(5);
         //Patterns.ReverseSameNumTriangle(5);
-        //Patterns.pyramid(3);
-        Patterns.ReversePyramid(4);
+        //Patterns.pyramid(4);
+        //Patterns.ReversePyramid(4);
+        //Patterns.diamond(4);
+        //Patterns.halfKite(5);
+        //Patterns.NumberRightTriangle(5);
+
     }
 }
