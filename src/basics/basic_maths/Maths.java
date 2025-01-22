@@ -54,7 +54,6 @@ public class Maths {
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
     //Palindrome
-
     public static boolean Palindrome(int x) {
         if (x < 0) return false; // Negative numbers cannot be palindromes
         int reverse = 0;
@@ -65,6 +64,47 @@ public class Maths {
         }
         return reverse == original;
     }
+
+//+++++++++++++++++++++++++++++++++++++++++ Armstrong +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+    public static boolean isArmstrong(int x) {
+        if (x < 0) return false;
+        int original = x;
+        int armstrong = 0;
+        while (x != 0) {
+            int lastDigit = x % 10;
+            armstrong += lastDigit * lastDigit * lastDigit;
+            x = x / 10;
+        }
+        return armstrong == original;
+    }
+
+
+    //+++++++++++++++++++++++++++++++++++++++++ print all divisor +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+    public static void printAllDivisors(int n) {
+            System.out.print("Divisors of " + n + " => ");
+        for (int i = 1; i <= n; i++) {
+            if (n % i == 0) {
+                System.out.print(i + " ");
+            }
+        }
+
+    }
+
+    public static int sumOfDivisors(int n) {
+        int sum = 0;
+       for(int i=1; i<=n; i++) {
+           for(int j=1; j<=i ;j++){
+               if(i%j==0){
+                   sum += j;
+               }
+           }
+       }
+       return sum;
+    }
+    //+++++++++++++++++++++++++++++++++++++++++ prime numbers +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
 
 
 }
