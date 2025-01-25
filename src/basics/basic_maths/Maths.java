@@ -104,7 +104,24 @@ public class Maths {
     }
     //+++++++++++++++++++++++++++++++++++++++++ prime numbers +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
+    public static boolean isPrime(int x) {
+        if(x <= 1) return false;
+        for(int i=2; i*i <=x ; i++){
+            if(x % i == 0) return false;
+        }
+        return true;
 
+    }
 
+    //+++++++++++++++++++++++++++++++++++++++++ HCF +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
+    public static void printHCF(int n1,int n2){
+        int hfc;
+        for(int i= Math.min(n1,n2) ; i>=1; i--){
+            if(n1 % i == 0 && n2 % i == 0){
+                System.out.println("HCF " + n1 + " and " + n2 + " is: "+ i);
+                break;
+            }
+        }
+    }
 }
