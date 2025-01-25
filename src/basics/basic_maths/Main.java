@@ -13,8 +13,8 @@ public class Main {
 //      System.out.println(Maths.sumOfDivisors(4));
      // Maths.printAllDivisors(85);
      // System.out.println(Maths.isPrime(5));
-        Maths.printHCF(9,12);
-
+       // Maths.printHCF(9,12);
+        Maths.EuclideanHCF(20,5);
 
 
     }

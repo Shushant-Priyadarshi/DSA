@@ -124,4 +124,21 @@ public class Maths {
             }
         }
     }
+    //+++++++++++++++++++++++++++++++++++++++++ Euclidean Algorithm+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+        public static void EuclideanHCF(int n1 ,int n2){
+            // hcf(n1,n2) = hcf(n1%n2,n2) [n1 > n2] till one of them becomes 0
+
+            while( n1 > 0 && n2 > 0){
+                if(n1 > n2){
+                    n1 = n1 % n2;
+                }else{
+                    n2 = n2 % n1;
+                }
+
+            }
+            if(n1 == 0) System.out.println("Euclidean HCF is: "+ n2);
+            else System.out.println("Euclidean HCF " + n2 + " is: "+ n1);
+
+    }
 }
