@@ -1,6 +1,11 @@
 package basics.basic_maths;
 
+import java.util.Arrays;
+import java.util.List;
+
 public class Main {
+
+
     public static void main(String[] args) {
         // Maths.extractNumber(3344);
 //      System.out.println(Maths.countDigits(12));
@@ -14,7 +19,10 @@ public class Main {
      // Maths.printAllDivisors(85);
      // System.out.println(Maths.isPrime(5));
        // Maths.printHCF(9,12);
-        Maths.EuclideanHCF(20,5);
+       // Maths.EuclideanHCF(20,5);
+
+        int[] ans =Maths.lcmAndGcd(14,8);
+        System.out.println(Arrays.toString(ans));
 
 
     }

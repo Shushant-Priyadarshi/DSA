@@ -1,5 +1,8 @@
 package basics.basic_maths;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Maths {
 
     //Digits Concept
@@ -82,7 +85,7 @@ public class Maths {
 
     //+++++++++++++++++++++++++++++++++++++++++ print all divisor +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
     public static void printAllDivisors(int n) {
-            System.out.print("Divisors of " + n + " => ");
+        System.out.print("Divisors of " + n + " => ");
         for (int i = 1; i <= n; i++) {
             if (n % i == 0) {
                 System.out.print(i + " ");
@@ -93,52 +96,80 @@ public class Maths {
 
     public static int sumOfDivisors(int n) {
         int sum = 0;
-       for(int i=1; i<=n; i++) {
-           for(int j=1; j<=i ;j++){
-               if(i%j==0){
-                   sum += j;
-               }
-           }
-       }
-       return sum;
+        for (int i = 1; i <= n; i++) {
+            for (int j = 1; j <= i; j++) {
+                if (i % j == 0) {
+                    sum += j;
+                }
+            }
+        }
+        return sum;
     }
     //+++++++++++++++++++++++++++++++++++++++++ prime numbers +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
     public static boolean isPrime(int x) {
-        if(x <= 1) return false;
-        for(int i=2; i*i <=x ; i++){
-            if(x % i == 0) return false;
+        if (x <= 1) return false;
+        for (int i = 2; i * i <= x; i++) {
+            if (x % i == 0) return false;
         }
         return true;
 
     }
 
+
+
     //+++++++++++++++++++++++++++++++++++++++++ HCF +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-    public static void printHCF(int n1,int n2){
+    public static void printHCF(int n1, int n2) {
         int hfc;
-        for(int i= Math.min(n1,n2) ; i>=1; i--){
-            if(n1 % i == 0 && n2 % i == 0){
-                System.out.println("HCF " + n1 + " and " + n2 + " is: "+ i);
+        for (int i = Math.min(n1, n2); i >= 1; i--) {
+            if (n1 % i == 0 && n2 % i == 0) {
+                System.out.println("HCF " + n1 + " and " + n2 + " is: " + i);
                 break;
             }
         }
     }
     //+++++++++++++++++++++++++++++++++++++++++ Euclidean Algorithm+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-        public static void EuclideanHCF(int n1 ,int n2){
-            // hcf(n1,n2) = hcf(n1%n2,n2) [n1 > n2] till one of them becomes 0
+    public static void EuclideanHCF(int n1, int n2) {
+        // hcf(n1,n2) = hcf(n1%n2,n2) [n1 > n2] till one of them becomes 0
 
-            while( n1 > 0 && n2 > 0){
-                if(n1 > n2){
-                    n1 = n1 % n2;
-                }else{
-                    n2 = n2 % n1;
-                }
-
+        while (n1 > 0 && n2 > 0) {
+            if (n1 > n2) {
+                n1 = n1 % n2;
+            } else {
+                n2 = n2 % n1;
             }
-            if(n1 == 0) System.out.println("Euclidean HCF is: "+ n2);
-            else System.out.println("Euclidean HCF " + n2 + " is: "+ n1);
+
+        }
+        if (n1 == 0) System.out.println("Euclidean HCF is: " + n2);
+        else System.out.println("Euclidean HCF " + n2 + " is: " + n1);
 
     }
+
+    public static int[] lcmAndGcd(int a, int b) {
+        int n1 = a;
+        int n2 = b;
+        int hcf;
+        int lcm;
+
+        // Step 1: Calculate HCF using the Euclidean algorithm
+        while (n1 > 0 && n2 > 0) {
+            if (n1 > n2) {
+                n1 = n1 % n2;
+            } else {
+                n2 = n2 % n1;
+            }
+        }
+        if (n1 == 0) {
+            hcf = n2;
+        } else {
+            hcf = n1;
+        }
+        // Step 2: Calculate LCM using the formula
+        lcm = (a * b) / hcf;
+
+        return new int[]{lcm,hcf} ;
+    }
+
 }
