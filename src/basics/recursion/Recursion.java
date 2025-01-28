@@ -1,5 +1,7 @@
 package basics.recursion;
 
+import java.util.ArrayList;
+
 public class Recursion {
     //+++++++++++++++++++++++++++++++++++++++++ Basic Theory +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
@@ -55,4 +57,49 @@ public class Recursion {
         }
         return 0;
     }
+
+    //print the sum of n consecutive numbers
+    public static int printSumOfNaturalNumbers(int n){
+        if(n!=0){
+            int num = printSumOfNaturalNumbers(n-1);
+            return num += n;
+        }
+        return 0;
+    }
+
+    //print the factorail
+    public static int factorial(int n){
+        if(n!=0){
+            int num = factorial(n-1);
+            return num*n ;
+        }
+        return 1;
+    }
+
+    //helper function
+    private static void  calcFactorial(long n,long factorial,long i,ArrayList<Long> result){
+        if(factorial > n) return;
+        result.add(factorial);
+        calcFactorial(n,n*(i+1),i+1,result);
+    }
+    //main function
+    public static ArrayList<Long> factorialNumebers(long n){
+        ArrayList<Long> result = new ArrayList<>();
+        calcFactorial(n,1,1,result);
+        return result;
+    }
+
+//    //Reverse an array
+//    public static void printTheArr(int arr[]){
+//        if(arr.length !=0){
+//            System.out.println(arr[arr.length-1]);
+//            printTheArr(arr);
+//        }
+//
+//    }
+
+
+
+
+
 }
