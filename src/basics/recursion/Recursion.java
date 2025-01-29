@@ -83,17 +83,94 @@ public class Recursion {
         calcFactorial(n,factorial*(i+1),i+1,result);
     }
     //main function
-    public static ArrayList<Long> factorialNumebers(long n){
+    public static ArrayList<Long> factorialNumbers(long n){
         ArrayList<Long> result = new ArrayList<>();
         calcFactorial(n,1,1,result);
         return result;
     }
 
-//    //Reverse an array
+    //Reverse an array
+        //using loops:
+            public static int[] reverseArray(int[] arr){
+                int start = 0;
+                int end = arr.length-1;
+                while(start<end){
+                    int temp = arr[start];
+                    arr[start] = arr[end];
+                    arr[end] = temp;
+                    start++;
+                    end--;
+                }
+                return arr;
+            }
+
+//    //Using Recursion:
+            // 1) using two pointers
+            public static void reverseArrayRecursion(int[] arr){
+                reverseHelper(arr,0,arr.length-1);
+                for(int ele : arr)System.out.print(ele+" ");
+            }
+
+            private static void reverseHelper(int[] arr,int start,int end){
+                if(start>=end)return;
+
+                int temp = arr[start];
+                arr[start] = arr[end];
+                arr[end] = temp;
+                reverseHelper(arr,start+1,end-1);
+            }
+
+    // 2) using one pointer
+        private static void reverseHelperOnePointer(int[] arr, int i){
+            if(i>=arr.length/2) return;
+            int temp = arr[i];
+            arr[i] = arr[arr.length-i-1];
+            arr[arr.length-i-1] = temp;
+            reverseHelperOnePointer(arr,i+1);
+        }
+        public static void reverseOnePointer(int[] arr){
+            reverseHelperOnePointer(arr,0);
+            for(int ele : arr)System.out.print(ele+" ");
+        }
 
 
+    // Palindrome:
 
+        private static String purifyString(String str){
+            return str.replaceAll("[^a-zA-Z0-9]", "").toLowerCase();
+        }
+        private static boolean reverseString(String str,int i){
+            if(i >= str.length()/2) return true;
+            if(str.charAt(i)!=str.charAt(str.length()-i-1)) return false;
+            return reverseString(str,i+1);
+        }
+        public static boolean isPalindrome(String s){
+                String str =purifyString(s);
+                return reverseString(str,0);
+        }
 
-
-
+    //Fibonacci series
+        //printing using loops
+    public static void printFibonacci(int n){
+        int first = 0;
+        int second = 1;
+        for (int i = 1; i <= n; i++) {
+            System.out.print(first + " ");
+            int nextTerm = first + second;
+            first = second;
+            second = nextTerm;
+        }
+    }
+        //printing the value of f(n) if nth term is given:
+            public static int fibonacci(int n){
+                if(n==0) return 0;
+                if(n==1) return 1;
+                int first=0, second =1 ;
+                for (int i = 2; i <= n; i++) {
+                    int nextTerm = first + second;
+                    first = second;
+                    second = nextTerm;
+                }
+                return second;
+            }
 }
