@@ -67,7 +67,7 @@ public class Recursion {
         return 0;
     }
 
-    //print the factorail
+    //print the factorial
     public static int factorial(int n){
         if(n!=0){
             int num = factorial(n-1);
@@ -77,10 +77,10 @@ public class Recursion {
     }
 
     //helper function
-    private static void  calcFactorial(long n,long factorial,long i,ArrayList<Long> result){
+    private static void  calcFactorial(long n,long factorial,int i,ArrayList<Long> result){
         if(factorial > n) return;
         result.add(factorial);
-        calcFactorial(n,n*(i+1),i+1,result);
+        calcFactorial(n,factorial*(i+1),i+1,result);
     }
     //main function
     public static ArrayList<Long> factorialNumebers(long n){
@@ -90,13 +90,7 @@ public class Recursion {
     }
 
 //    //Reverse an array
-//    public static void printTheArr(int arr[]){
-//        if(arr.length !=0){
-//            System.out.println(arr[arr.length-1]);
-//            printTheArr(arr);
-//        }
-//
-//    }
+
 
 
 

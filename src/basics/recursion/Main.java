@@ -14,7 +14,7 @@ public class Main {
  //       System.out.println( Recursion.printCubeOfNaturalNumbers(5));
 //        System.out.println( Recursion.printSumOfNaturalNumbers(3));
   //      System.out.println( Recursion.factorial(6));
-        System.out.println(Solution.factorialNumbers(10));
+        System.out.println(Recursion.factorialNumebers(10));
 
     }
 }
