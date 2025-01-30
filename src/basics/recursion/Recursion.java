@@ -175,8 +175,6 @@ public class Recursion {
             }
          //returning using recursion
         public static int fibonacciRecursion(int n){
-           if(n==0) return 0;
-           if(n==1) return 1;
            if(n <= 1) return n;
            return fibonacciRecursion(n-1) + fibonacciRecursion(n-2);
         }
