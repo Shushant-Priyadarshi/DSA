@@ -7,7 +7,12 @@ public class Main {
         int arr[] = {2, 3, 2, 3, 5};
         int arr2[] = {3,3,3,3};
         ArrayList<Integer> ans =Hashing.frequencyCount(arr2);
-        System.out.println(ans);
+        //System.out.println(ans);
+
+
+        String s = "abcaadec";
+        ArrayList<Integer> result = Hashing.frequencyCountString(s);
+        System.out.println(result);
 
     }
 }
