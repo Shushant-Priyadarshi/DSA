@@ -40,4 +40,9 @@ public class Sorting {
         printArray(arr);
     }
 
+    //Insertion Sort
+    static void InsertionSort(int[] arr){
+        System.out.println("Insertion Sort");
+    }
+
 }
