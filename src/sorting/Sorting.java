@@ -42,7 +42,17 @@ public class Sorting {
 
     //Insertion Sort
     static void InsertionSort(int[] arr){
-        System.out.println("Insertion Sort");
+       int n = arr.length;
+       for(int i =0; i<=n-1;i++){
+           int j=i;
+           while(j>0 && arr[j]<arr[j-1]){
+               int temp = arr[j];
+               arr[j] = arr[j-1];
+               arr[j-1] = temp;
+               j--;
+           }
+       }
+       printArray(arr);
     }
 
 }
