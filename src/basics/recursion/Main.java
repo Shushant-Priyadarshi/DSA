@@ -38,7 +38,7 @@ public class Main {
 //        System.out.println(     Recursion.isPalindrome("MADAM"));
  //       Recursion.printFibonacci(8);
        // System.out.println(Recursion.fibonacci(3));
-        System.out.println(Recursion.fibonacciRecursion(4));
+        System.out.println(Recursion.fibonacciRecursion(50));
 
 
     }
