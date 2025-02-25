@@ -25,18 +25,6 @@ public class LinearSearch {
          return false;
     }
 
-    //Minimum Numbers
-    static int findMinimumNumber(int arr[]) {
-         if(arr.length == 0 ) return Integer.MIN_VALUE;
-         int minimum = arr[0];
-         for(int i =0 ; i< arr.length ;i++){
-             if(minimum > arr[i]){
-                 minimum = arr[i];
-             }
-         }
-         return minimum;
-    }
 
-    //2-D Array
 
 }
