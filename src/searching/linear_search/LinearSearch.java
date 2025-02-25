@@ -25,6 +25,11 @@ public class LinearSearch {
          return false;
     }
 
-
+    public static void main(String[] args) {
+        int arr[] = {54,32,-65,10,23,90,40};
+        int target = 3;
+        System.out.println(LinearSearch.linearSearch(arr, target));
+        System.out.println(LinearSearch.searchInString("Shushant",'m'));
+    }
 
 }
