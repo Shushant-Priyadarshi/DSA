@@ -12,9 +12,20 @@ public class FindMinimum {
         }
         return minimum;
     }
+    //Max
+    static int findMax(int[] arr){
+        int ans = arr[0];
+        for(int i : arr){
+            if(ans < i){
+                ans =i;
+            }
+        }
+        return ans;
+    }
 
     public static void main(String[] args) {
         int arr[] = {54,32,-65,10,23,90,40};
         System.out.println(findMinimumNumber(arr));
+        System.out.println(findMax(arr));
     }
 }
