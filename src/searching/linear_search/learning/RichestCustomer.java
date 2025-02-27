@@ -1,4 +1,4 @@
-package searching.linear_search;
+package searching.linear_search.learning;
 
 //1672. Richest Customer Wealth
 public class RichestCustomer {

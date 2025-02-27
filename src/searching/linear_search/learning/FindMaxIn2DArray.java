@@ -1,4 +1,4 @@
-package searching.linear_search;
+package searching.linear_search.learning;
 
 public class FindMaxIn2DArray {
 

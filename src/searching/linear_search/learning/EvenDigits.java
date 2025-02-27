@@ -1,4 +1,4 @@
-package searching.linear_search;
+package searching.linear_search.learning;
 
 public class EvenDigits {
     //Find Numbers with Even Number of Digits
