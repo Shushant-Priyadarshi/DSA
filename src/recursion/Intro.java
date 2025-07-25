@@ -1,6 +1,6 @@
 package recursion;
 
-public class One {
+public class Intro {
     public static void main(String[] args) {
         //print(1);
         //System.out.println(fact(5));
